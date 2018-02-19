@@ -1,0 +1,5 @@
+<% if !flash.empty? %>
+  <% flash.each do |name, message| %>
+    <%= content_tag :div, message, :id => name %>
+  <% end %>
+<% end %>
